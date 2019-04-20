@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<title></title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jQuizler.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/jQuizler.css" />
+
+<script type="text/javascript">
+var questions = [
+    {
+        type: "choose",
+        question: "<h3>Какого происходения Джакомо Кварнеги?</h3>",
+        answers: [
+            "Французкого",
+            "Итальянского",
+            "Немецкого",
+            "Русского"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h3>Кто пригласил Джакомо Кварнеги в Санкт-Петербург?</h3>",
+        answers: [
+            "Елизавета Петровна",
+            "Екатерина I",
+            "Екатерина II",
+            "Петр I"
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h3>Джакомо Кварнеги представитель...</h3>",
+        answers: [
+            "Палладианства",
+            "Ампира",
+            "Неогрека"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h3>Годы Жизни Кварнеги -...</h3>",
+        answers: [
+            "1744-1817",
+            "1700-1771",
+            "1713-1780"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h3>Какой архитектурный стиль у Джакомо Кварнеги?</h3>",
+        answers: [
+            "Барокко",
+            "Елизаветинское барокко",
+            "Ранний классицизм",
+            "Классицизм"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h3>Что <strong>НЕ</strong> является работой Кварнеги?</h3>",
+        answers: [
+            "Эмитажный театр",
+            "Смольный институт благородных девиц",
+            "Юсуповский дврец",
+            "Конногвардейский манеж"
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h3>Что является работой Кварнеги?</h3>",
+        answers: [
+            "Большой Гостиный двор",
+            "Большой Эмитаж",
+            "Академия наук",
+            "Малый Эмитаж"
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h3>Что является работой Кварнеги?</h3>",
+        answers: [
+            "Новая Голландия",
+            "Екатериненский институт",
+            "Зимний дворец",
+            "Смольный монастырь"
+        ],
+        correct: [2]
+    }
+];
+
+$("document").ready(function(){
+    $("#jQuizler").jQuizler(questions);
+});
+
+</script>
+</head>
+
+<body>
+    <div id="jQuizler" class="main-quiz-holder">
+        <h3>Тест на тему: "Архитектор Кварнеги"</h3>
+		<p><img src="images/os.jpg" /></p>
+        <button class="btn btn-large">Начать тест</button>
+    </div>
+</body>
+</html>
